@@ -22,21 +22,21 @@ const Hero = () => {
 
                     <div className="flex py-5 ">
                         <a
-                            href="https://twitter.com/CoderAmrin"
+                            href="https://github.com/dakshal-d"
                             className="pr-4 inline-block hover:text-blue-400"
                         >
                           
                             <AiFillGithub size={40} />
                         </a>
                         <a
-                            href="https://www.youtube.com/@coderamrin"
+                            href="https://www.linkedin.com/in/dakshal-d"
                             className="pr-4 inline-block hover:text-blue-400"
                         >
                 
                             <AiFillLinkedin size={40} />
                         </a>
                         <a
-                            href="https://www.facebook.com/CoderAmrin/"
+                            href="/"
                             className="pr-4 inline-block hover:text-blue-400"
                         >
                            
