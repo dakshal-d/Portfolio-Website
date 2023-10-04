@@ -1,6 +1,9 @@
 import React from "react";
 import AboutImg from "../assets/about-img.png";
-
+import {
+  BiLogoAws,
+  BiLogoMicrosoft
+} from "react-icons/bi";
 const About = () => {
   return (
     <section className="bg-gray-900 text-white px-5 py-32" id="about">
@@ -23,6 +26,23 @@ const About = () => {
           <p>
             In my spare time I learn about generative AI and cloud platforms(generally AWS).
           </p>
+          <h3 className="mt-8 text-3xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
+            Certifications
+          </h3>
+          <div className="grid grid-cols-2 mx-auto gap-10">
+
+              <a href="https://www.credly.com/badges/fbb9cc9c-26d0-490a-8fdd-3eff88d32326/public_url" className="hover:bg-black rounded-xl px-12 py-10">
+                <BiLogoAws className="mx-20" size={80} />
+                <p>AWS-Cloud Practitioner(CLF-C01)</p>
+              </a>
+
+              <a href="https://www.credly.com/badges/f031ba25-6b98-4250-b7f3-bec6b24fec5e/public_url" className="hover:bg-black rounded-xl px-7 py-10">
+                <BiLogoMicrosoft className="mx-24" size={80} />
+                <p>Microsoft Azure Fundamentals(AZ-900)</p>
+              </a>
+          </div>
+
+
         </div>
 
         <div className="about-img">
