@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImg from "../assets/hero-img.png";
 import memoryChronicles from "../assets/memoryChronicles.png";
 import jalso from "../assets/jalso.png";
+import Portfolio from "../assets/Portfolio.png";
 import voice from "../assets/voice.jpg";
 const Projects = () => {
     const projects = [
@@ -23,15 +23,15 @@ const Projects = () => {
             img: voice,
             title: "css projects",
             desc: "Frontend Mentor challange directory, solved with vanilla CSS",
-            live: "https://build-10-css-projects.netlify.app/",
-            code: "https://github.com/Coderamrin/build-10-css-projects",
+            live: "https://github.com/dakshal-d/Virtual-Assisstant",
+            code: "https://github.com/dakshal-d/Virtual-Assisstant",
         },
         {
-            img: HeroImg,
+            img: Portfolio,
             title: "get Inspirred",
             desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
             live: "https://get-inspirred.netlify.app/",
-            code: "https://github.com/Coderamrin/get-inspired",
+            code: "https://github.com/dakshal-d/Portfolio-Website",
         },
     ];
 
@@ -52,7 +52,7 @@ const Projects = () => {
                 <div className="about-img"></div>
             </div>
 
-            <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
+            <div className="projects container mx-auto grid md:grid-cols-2 gap-10">
                 {projects.map((project, i) => {
                     return (
                         <div className="relative" key={i}>
