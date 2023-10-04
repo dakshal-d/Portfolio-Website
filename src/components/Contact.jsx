@@ -16,7 +16,6 @@ const Contact = () => {
           toast.error('Failed to send message');
         });
       form.current.reset();
-        // You can add code here to handle the form submission, e.g., sending the data to a server or displaying a confirmation message.
     };
 
     return (
