@@ -30,7 +30,7 @@ const Projects = () => {
             img: Portfolio,
             title: "Portfolio Website",
             desc: "Personal Portfolio Website. Used React for the development of this Website",
-            live: "https://get-inspirred.netlify.app/",
+            live: "/",
             code: "https://github.com/dakshal-d/Portfolio-Website",
         },
     ];
