@@ -22,7 +22,7 @@ const Projects = () => {
         {
             img: voice,
             title: "Voice Assisstant",
-            desc: "Innovative voice assistant, with advanced natural language processing algorithms, resulting in a significant reduction in manual tasks and enhanced productivity for users",
+            desc: "Desktop voice assistant, with advanced natural language processing algorithms, resulting in a significant reduction in manual tasks and enhanced productivity for users",
             live: "https://github.com/dakshal-d/Virtual-Assisstant",
             code: "https://github.com/dakshal-d/Virtual-Assisstant",
         },
