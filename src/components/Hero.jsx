@@ -10,8 +10,8 @@ const Hero = () => {
           <p className="mb-5 inline-flex rounded-full border border-teal-300/30 bg-teal-300/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-teal-200">
             Software Engineer
           </p>
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-white lg:text-7xl">
-            Building AI systems that feel useful on day one.
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-[3.4rem]">
+            Learning & Building AI systems
           </h1>
 
           <p className="max-w-2xl py-6 text-lg leading-8 text-slate-300">
@@ -21,8 +21,8 @@ const Hero = () => {
           </p>
 
           <p className="pb-8 text-slate-400">
-            Bengaluru, India • MuSigma Business Solutions • React, Node.js,
-            Flask, LangGraph, AWS
+            Bengaluru, India • MuSigma Business Solutions • GenAI, MCP, RAG,
+            LangGraph, AWS
           </p>
 
           <div className="flex flex-wrap gap-4 py-2">
@@ -61,8 +61,8 @@ const Hero = () => {
                   <p className="mt-2 text-xl font-semibold text-white">GenAI</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-sm uppercase tracking-[0.2em] text-slate-400">Stack</p>
-                  <p className="mt-2 text-xl font-semibold text-white">React + Flask</p>
+                  <p className="text-sm uppercase tracking-[0.2em] text-slate-400">Specialty</p>
+                  <p className="mt-2 text-xl font-semibold text-white">Agents + RAG</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                   <p className="text-sm uppercase tracking-[0.2em] text-slate-400">Cloud</p>
