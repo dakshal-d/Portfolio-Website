@@ -3,7 +3,7 @@ import React from "react";
 const experiences = [
   {
     company: "MuSigma Business Solutions",
-    role: "Software Engineer",
+    role: "Decision Scientist",
     project: "GenAI Data Assistant",
     subtitle: "Agentic Chatbot for Pharma Analytics",
     period: "Aug 2024 - Present",
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     company: "MuSigma Business Solutions",
-    role: "Software Engineer",
+    role: "Decision Scientist",
     project: "File Verity Tool",
     subtitle: "Automated Data Validation Platform",
     period: "Aug 2024 - Present",
