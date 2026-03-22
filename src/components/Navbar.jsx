@@ -1,36 +1,40 @@
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
-  const name="<Dakshal-d/>"
+
+  const name = "<Dakshal-d/>";
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-indigo-700'><a href='/'>{name}</a></h1>
-      <ul className='hidden md:flex'>
-        <li className='p-4 hover:text-indigo-700'><a href='/#about'>About</a></li>
-        <li className='p-4 hover:text-indigo-700'><a href='/#experience'>Experience</a></li>
-        <li className='p-4 hover:text-indigo-700'><a href='/#Projects'>Projects</a></li>
-        <li className='p-4 hover:text-indigo-700'><a href='/#Contact'>Contact</a></li>
-        <li className='p-4 hover:text-indigo-700'><a href='https://drive.google.com/file/d/1COLcKQCuCV0tS8U05MV5oBQlIUD9hw1M/view?usp=drive_link'>Resume</a></li>
-      </ul>
-      <div onClick={handleNav} className='block md:hidden'>
-          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
+    <header className="sticky top-0 z-50 px-4 pt-5">
+      <div className="glass-panel mx-auto flex h-20 max-w-6xl items-center justify-between rounded-full px-6 text-white">
+        <a href="/" className="text-2xl font-bold text-teal-300">
+          {name}
+        </a>
+        <ul className="hidden items-center gap-1 md:flex">
+          <li><a className="rounded-full px-4 py-2 text-slate-200 hover:bg-white/10 hover:text-white" href="/#about">About</a></li>
+          <li><a className="rounded-full px-4 py-2 text-slate-200 hover:bg-white/10 hover:text-white" href="/#experience">Experience</a></li>
+          <li><a className="rounded-full px-4 py-2 text-slate-200 hover:bg-white/10 hover:text-white" href="/#Projects">Projects</a></li>
+          <li><a className="rounded-full px-4 py-2 text-slate-200 hover:bg-white/10 hover:text-white" href="/#Contact">Contact</a></li>
+          <li><a className="rounded-full bg-teal-300 px-5 py-2 font-semibold text-slate-950 hover:bg-teal-200" href="https://drive.google.com/file/d/1COLcKQCuCV0tS8U05MV5oBQlIUD9hw1M/view?usp=drive_link">Resume</a></li>
+        </ul>
+        <button onClick={handleNav} className="block rounded-full border border-white/15 bg-white/5 p-3 md:hidden" aria-label="Toggle navigation">
+          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        </button>
       </div>
-      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-        <h1 className='w-full text-3xl font-bold text-indigo-700 m-4'>{name}</h1>
-          <li className='p-4 border-b border-gray-600'><a href='/#about'>About</a></li>
-          <li className='p-4 border-b border-gray-600'><a href='/#experience'>Experience</a></li>
-          <li className='p-4 border-b border-gray-600'><a href='/#Projects'>Projects</a></li>
-          <li className='p-4 border-b border-gray-600'><a href='/#Contact'>Contact</a></li>
-          <li className='p-4 border-b border-gray-600'><a href='https://drive.google.com/file/d/1COLcKQCuCV0tS8U05MV5oBQlIUD9hw1M/view?usp=drive_link'>Resume</a></li>
-          <li className='p-4'>Contact</li>
+      <ul className={nav ? "glass-panel fixed left-4 right-4 top-28 rounded-3xl border border-white/10 p-6 text-white ease-in-out duration-500 md:hidden" : "pointer-events-none fixed left-4 right-4 top-20 rounded-3xl border border-white/0 p-6 opacity-0 ease-in-out duration-500 md:hidden"}>
+        <li className="border-b border-white/10 py-3"><a href="/#about" onClick={handleNav}>About</a></li>
+        <li className="border-b border-white/10 py-3"><a href="/#experience" onClick={handleNav}>Experience</a></li>
+        <li className="border-b border-white/10 py-3"><a href="/#Projects" onClick={handleNav}>Projects</a></li>
+        <li className="border-b border-white/10 py-3"><a href="/#Contact" onClick={handleNav}>Contact</a></li>
+        <li className="pt-4"><a className="inline-flex rounded-full bg-teal-300 px-5 py-2 font-semibold text-slate-950" href="https://drive.google.com/file/d/1COLcKQCuCV0tS8U05MV5oBQlIUD9hw1M/view?usp=drive_link">Resume</a></li>
       </ul>
-    </div>
+    </header>
   );
 };
 

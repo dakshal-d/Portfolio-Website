@@ -8,17 +8,14 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-
-      <>
+      <div className="app-shell">
       <Navbar />
       <Hero />
       <About/>
       <Experience />
       <Projects/>
       <Contact/>
-      </>
-
-
+      </div>
   );
 }
 

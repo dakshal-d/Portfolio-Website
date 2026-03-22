@@ -35,13 +35,13 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="bg-gray-900 text-white px-5 pt-16 pb-32" id="experience">
-      <div className="container mx-auto">
+    <section className="px-5 pb-28 pt-16 text-white" id="experience">
+      <div className="container mx-auto max-w-6xl">
         <div className="mb-12 max-w-3xl">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[260px] border-indigo-600 pb-2">
+          <h2 className="section-title mb-5 text-4xl font-bold">
             Work Experience
           </h2>
-          <p className="text-gray-300">
+          <p className="text-lg leading-8 text-slate-300">
             Production experience across Generative AI systems, full-stack
             delivery, data platforms, and cloud-backed engineering workflows.
           </p>
@@ -51,24 +51,24 @@ const Experience = () => {
           {experiences.map((experience) => (
             <article
               key={`${experience.company}-${experience.project}`}
-              className="rounded-2xl border border-gray-800 bg-gray-950/70 p-8 shadow-lg"
+              className="glass-panel rounded-[2rem] p-8"
             >
-              <div className="flex flex-col gap-4 border-b border-gray-800 pb-6 md:flex-row md:items-start md:justify-between">
+              <div className="flex flex-col gap-4 border-b border-white/10 pb-6 md:flex-row md:items-start md:justify-between">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-blue-300">
+                  <p className="text-sm uppercase tracking-[0.3em] text-teal-200">
                     {experience.company}
                   </p>
-                  <p className="mt-2 text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
+                  <p className="mt-2 text-sm font-medium uppercase tracking-[0.2em] text-slate-400">
                     {experience.role}
                   </p>
-                  <h3 className="mt-3 text-2xl font-semibold">
+                  <h3 className="mt-3 text-3xl font-semibold text-white">
                     {experience.project}
                   </h3>
-                  <p className="mt-2 text-gray-300">{experience.subtitle}</p>
+                  <p className="mt-2 text-lg text-slate-300">{experience.subtitle}</p>
                 </div>
-                <div className="rounded-xl border border-gray-800 bg-gray-900/80 px-4 py-3 text-sm text-gray-300 md:min-w-[220px] text-center">
+                <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-center text-sm text-slate-200 md:min-w-[220px]">
                   <p>{experience.period}</p>
-                  <p className="mt-1 text-gray-400">{experience.location}</p>
+                  <p className="mt-1 text-slate-400">{experience.location}</p>
                 </div>
               </div>
 
@@ -76,18 +76,18 @@ const Experience = () => {
                 {experience.stack.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-blue-900/70 bg-blue-950/40 px-3 py-1 text-sm text-blue-200"
+                    className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-sm text-teal-100"
                   >
                     {item}
                   </span>
                 ))}
               </div>
 
-              <ul className="mt-6 grid gap-4 text-gray-200">
+              <ul className="mt-6 grid gap-4 text-slate-200">
                 {experience.highlights.map((highlight) => (
                   <li
                     key={highlight}
-                    className="rounded-xl border border-gray-800 bg-gray-900 px-4 py-3"
+                    className="rounded-2xl border border-white/10 bg-slate-950/55 px-4 py-4"
                   >
                     {highlight}
                   </li>
